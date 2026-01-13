@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 300px;
+}
+
+#messages {
+  height: 200px;
+  overflow-y: auto;
+}
+
+.message {
+  background: #f1eaff;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 5px;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
